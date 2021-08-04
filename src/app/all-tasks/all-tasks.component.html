@@ -1,0 +1,18 @@
+<div class="allTasks-div">
+  <div class="allTaskTitle">ALL TASKS</div>
+  <div class="allTaskDiv" (click)="deleteTask($event)" *ngFor="let allTasks of allTaskList">
+    <div class="taskCards">
+      <div class="taskId">{{allTasks.allTasksId}}</div> 
+      <div class="taskName"> {{allTasks.allTaskName}}</div>
+      <div class="taskTime">{{allTasks.allTaskTime}}</div>
+      <div class="deleteTask" (click)="deleteTask($event)"> <button class="deleteTaskbtn"><i class="fas fa-trash-alt deleteI"></i></button> </div>
+    </div>
+  </div>
+  <div class="addBtn">
+    <div class="new-task">
+      <input type="text" name="newtaskName" id="newTaskName" placeholder="New Task">
+      <input type="text" name="newtasktime" id="newTasktime" placeholder="Time">
+    </div>
+    <button class="addTask" id="addTask" (click)="addTask($event)">ADD</button>
+  </div>
+</div>

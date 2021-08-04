@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "eba6b712-90f0-4d24-b5d2-c59293188872"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -65,7 +68,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "dayTrackerApp:build"
+            "browserTarget": "dayTrackerApp:build",
+            "port":4000
           },
           "configurations": {
             "production": {

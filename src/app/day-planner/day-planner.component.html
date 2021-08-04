@@ -1,0 +1,16 @@
+<div class="day-planner-container">
+    <div class="daily-tasks" id="daily-tasks">
+        <div class="tasks-list">
+            <div class="task" *ngFor="let dailyTask of dailyTasksList">
+                <!-- <span><input type="checkbox"  [checked]="checkedVal" (change)="onCheckboxChange($event)" id={{dailyTask.taskId}}></span> <span>{{dailyTask.taskName}}</span> -->
+                <span><input type="checkbox" id={{dailyTask.taskId}}></span> <span>{{dailyTask.taskName}}</span>
+            </div>
+        </div>
+        <div class="addBtn">
+            <div class="new-task">
+                <input type="text" name="newtaskName" id="newTaskName" placeholder="New Task">
+            </div>
+            <button class="addTask" id="addTask" (click)="addTask($event)">ADD</button>
+          </div>
+    </div>
+</div>

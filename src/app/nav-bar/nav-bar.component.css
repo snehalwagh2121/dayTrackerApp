@@ -1,0 +1,58 @@
+.navBarContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, rgb(25, 17, 184) 0%, rgb(9, 76, 231) 100%);
+    padding: 0 2%;
+}
+.goals{
+    height: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.goals div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+    margin: 0 10px;
+    font-size: 1.1rem;
+    padding: 0 15px;
+
+    /* background: linear-gradient(to left, rgba(9, 76, 231, 0%) 50%, rgb(25, 17, 184) 50%) right;
+    background-size: 200%;
+    transition: .3s ease-out; */
+}
+.goals div:hover{
+    /* background-position: left; */
+    font-weight: bold;
+    /* text-shadow: 1px 1px 1px #fff; */
+}
+.title{
+    font-size: 2rem;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .navBarContainer{
+        display: flex;
+        justify-content: center;
+    }
+    .title{
+        width: 40%;
+        font-size: 0.8rem;
+    }
+    .goals{
+        width: 60%;
+    }
+    .goals div{
+        width: 50%;
+        font-size: 0.5rem;
+        margin: 0 5px;
+    }
+}

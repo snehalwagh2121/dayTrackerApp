@@ -1,0 +1,12 @@
+<div class="heading">LONG TERM GOALS</div>
+<div class="goalsContainer">
+    <div class="goals" >
+        <div class="goal" *ngFor="let longTerm of longTermGoalList">{{longTerm.goalName}}</div>
+    </div>
+    <div class="addBtn">
+        <div class="new-task">
+            <input type="text" name="newtaskName" id="newTaskName" placeholder="New Task">
+        </div>
+        <button class="addTask" id="addTask" (click)="addTask($event)">ADD</button>
+      </div>
+</div>

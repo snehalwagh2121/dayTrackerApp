@@ -1,0 +1,117 @@
+.container{
+    /* height: 100vh; */
+    width: 100vw;
+    /* background-color: blue; */
+    margin: 0;
+    padding: 0;
+}
+.AppTitle{
+    height: 8vh;
+    width: 100%;
+}
+.displayScreenTabs{
+    padding: 0 2% 0 0;
+    display: flex;
+    width: 100%;
+    height: 5vh;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.dayPlannerTab{
+    height: 100%;
+    /* background-color: black; */
+    /* width: 20%; */
+    padding: 0 1% 0 0 ;
+    vertical-align: middle;
+}
+.dayPlannerTab .plannerHeading{
+    height: 100%;
+    /* color: whitesmoke; */
+    white-space: nowrap;
+    background: linear-gradient(to left, white 50%, cornflowerblue 50%) right;
+    background-size: 200%;
+    transition: 0.5s ease-out;
+   
+}
+.dayPlannerTab .plannerHeading:hover{
+    background-position: left;
+    /* background: linear-gradient(to right, red 50%, blue 50%); */
+}
+.dayPlannerTab .plannerHeading span, .dayPlannerTab .plannerHeading i{
+    vertical-align: middle;
+}
+.tasksTab{
+    display: flex;
+    height: 100%;
+    
+}
+.tasksTab div{
+    height: 100%;
+    margin: 0 10px;
+    /* background-color: brown; */
+    background: linear-gradient(to left, white 50%, cornflowerblue 50%) right;
+    transition: 0.5s ease-out;
+    background-size: 200%;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.tasksTab div:hover{
+    background-position: left;    
+}
+.tasksTab div span{
+    vertical-align: middle;
+}
+.displayScreen{
+    min-height: 80vh;
+    /* height: 85%; */
+    /* background-color: burlywood; */
+    display: flex;
+   background-color: #686868;
+}
+
+.dayPlanner{
+    width: 100%;
+    height: 73%;
+    position: absolute;
+    /* transition: visibility 2s ease-out; */
+    /* background-color: black; */
+}
+.gen-tasks{
+    height: 95%;
+    margin: 1%;
+    width: 33%;
+    border-radius: 20px;
+    background-color: 	#505050;
+    color: white;
+}
+.shortTerm, .longTerm{
+    position: absolute;
+    width: 98%;
+    height: 84%;
+    /* background-color: crimson; */
+}
+.waterIntakeTracker{
+    width: 100vw;
+    height: 7vh;
+    background-color: #606060;
+}
+.hide{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .AppTitle{
+        width: 100%;
+    }
+    .displayScreen{
+        display: flex;
+        flex-direction: column;
+    }
+    .displayScreen div{
+        width: 98%;
+    }
+    .dayPlannerTab .plannerHeading{
+        font-size: 0.7rem;
+    }
+}

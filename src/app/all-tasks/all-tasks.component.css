@@ -1,0 +1,102 @@
+.allTasks-div{
+    height: 100%;
+    width: 100%;
+    padding: 2%;
+    /* background-color: burlywood; */
+}
+.allTaskTitle{
+    height: 10%;
+    /* background-color: chartreuse; */
+    vertical-align: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.taskCards{
+    display: flex;
+    margin: 2%;
+    /* background-color: coral; */
+}
+.taskCards .taskName, .taskCards .taskTime{
+    width: 45%;
+}
+.taskCards .taskName{
+    padding: 0 0 0 2%;
+}
+.addBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    /* background-color: cornflowerblue; */
+    /* padding: 10px; */
+}
+.addBtn .new-task{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* background-color: crimson; */
+}
+.new-task input{
+    margin: 0 2%;
+    height: 50%;
+    width: 50%;
+    border-radius: 10px; 
+    border: none;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+}
+input:focus{
+    border-radius: 10px;
+    border: none;
+}
+.addTask{
+    font-size: 0.8rem;
+    border-radius: 10px;
+    border: none;
+    padding: 5px 10px;
+}
+.deleteTaskbtn{
+    border: none;
+}
+.deleteTaskbtn i{
+    font-size: 1.2rem;
+    background-color:#505050;
+}
+.taskId{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .allTaskTitle{
+        height: 12%;
+        font-size: 0.8rem;
+    }
+    .taskCards{
+        font-size: 0.7rem;
+    }
+    .addBtn .new-task{
+        width: 70%;
+    }
+    .addBtn .new-task input{
+        width: 70%;
+        height: 20px;
+        font-size: 0.6rem;
+    }
+    .addBtn .addTask{
+        font-size: 0.6rem;
+        height: 25px;
+        padding: 2px 8px;
+    }
+    .taskCards .deleteTask button {
+        background-color: #505050;
+    }
+    .taskCards .deleteTask button i{
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,18 @@
+<div class="healthtasks-div">
+  <div class="healthTaskTitle">HEALTH TASKS</div>
+  <div class="healthTaskDiv" (click)="deleteTask($event)" *ngFor="let healthTask of healthTaskList">
+    <div class="healthCards">
+      <div class="healthTaskId">{{healthTask.healthTaskId}}</div> 
+      <div class="healthtaskName"> {{healthTask.heathTaskName}}</div>
+      <div class="healthtaskTime">{{healthTask.heathTaskTime}}</div>
+      <div class="deleteTask"> <button class="deleteTaskbtn"><i class="fas fa-trash-alt deleteI"></i></button> </div>
+    </div>
+  </div>
+  <div class="addBtn">
+    <div class="new-healthtask">
+      <input type="text" name="newhealthtaskName" id="newhealthTaskName" placeholder="New Task">
+      <input type="text" name="newhealthtasktime" id="newhealthTasktime" placeholder="Time">
+    </div>
+    <button class="addhealthTask" (click)="addTask($event)">ADD</button>
+  </div>
+</div>

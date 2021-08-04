@@ -1,0 +1,32 @@
+.heading{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.goalsContainer{
+    width: 100%;
+    height: 90%;
+    padding: 5%;
+
+}
+.goals{
+    margin: 5px 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.goal{
+    margin: 10px 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .heading{
+        font-size: 0.7rem;
+    }
+    .goalsContainer .goals .goal{
+        font-size: 0.6rem;
+        width: 30%;
+    }
+}

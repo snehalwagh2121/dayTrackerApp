@@ -1,0 +1,49 @@
+.stats-div{
+    height: 100%;
+    width: 100%;
+    padding: 2%;
+}
+.statsHeading{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.charts{
+    width: 100%;
+    height: 90%;
+}
+.charts div{
+    height: 49%;
+    margin: 1%;
+    /* background-color: cyan; */
+}
+.pieChartDiv .pieChartHeading, .graphDiv .graphHeading{
+    /* background-color: darkblue; */
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pieChartDiagram, .graphDiagram{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .statsHeading{
+        font-size: 0.7rem;
+    }
+    .pieChartDiv .pieChartHeading, .graphDiv .graphHeading{
+        font-size: 0.6rem;
+    }
+    .pieChartDiagram, .graphDiagram{
+        font-size: 0.6rem;
+    }
+}

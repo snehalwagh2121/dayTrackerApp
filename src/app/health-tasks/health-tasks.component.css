@@ -1,0 +1,93 @@
+.healthtasks-div{
+    height: 100%;
+    width: 100%;
+    padding: 2%;
+    /* background-color: burlywood; */
+}
+.healthTaskTitle{
+    height: 10%;
+    /* background-color: chartreuse; */
+    vertical-align: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.healthCards{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2%;
+    /* background-color: coral; */
+}
+.healthCards .healthtaskName, .healthCards .healthtaskTime{
+    width: 45%;
+    color: white;
+}
+.healthCards .healthtaskName{
+    padding: 0 0 0 2%;
+}
+.addBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    /* background-color: cornflowerblue; */
+    /* padding: 10px; */
+}
+.addBtn .new-healthtask{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* background-color: crimson; */
+}
+.new-healthtask input{
+    margin: 0 2%;
+    height: 50%;
+    width: 50%;  
+    border-radius: 10px;
+    border: none;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+}
+.addhealthTask{
+    font-size: 0.8rem;
+    border-radius: 10px;
+    border: none;
+    padding: 5px 10px;
+}
+.healthTaskId{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .healthTaskTitle{
+        height: 12%;
+        font-size: 0.8rem;
+    }
+    .healthCards{
+        font-size: 0.7rem;
+    }
+    .addBtn .new-healthtask{
+        width: 70%;
+    }
+    .addBtn .new-healthtask input{
+        width: 70%;
+        height: 20px;
+        font-size: 0.6rem;
+    }
+    .addBtn .addhealthTask{
+        font-size: 0.6rem;
+        height: 25px;
+        padding: 2px 8px;
+    }
+    .healthCards .deleteTask button {
+        background-color: #505050;
+    }
+    .healthCards .deleteTask button i{
+        font-size: 0.9rem;
+    }
+}
